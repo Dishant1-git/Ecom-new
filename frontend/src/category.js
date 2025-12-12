@@ -42,7 +42,7 @@ const Category = () => {
     const cat = async () => {
 
         try {
-            const res = await fetch("https://ecom-2-dmmb.onrender.com/api/category1", {
+            const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/category1", {
                 method: "get"
             })
             if (res.ok) {
@@ -63,7 +63,7 @@ const Category = () => {
     const del = async (cid) => {
 
         try {
-            const res = await fetch(`https://ecom-2-dmmb.onrender.com/api/delete/${cid}`, {
+            const res = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/delete/${cid}`, {
                 method: "delete"
             })
             if (res.ok) {
@@ -99,7 +99,7 @@ const Category = () => {
         formdata.append("ctype", ctype)
 
         try {
-            const res = await fetch("https://ecom-2-dmmb.onrender.com/api/categoryupdate", {
+            const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/categoryupdate", {
                 method: "put",
                 body: formdata,
             })
