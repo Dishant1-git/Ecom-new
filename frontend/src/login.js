@@ -45,7 +45,7 @@ const Loginp = () => {
     if (!validate()) return;
 
     try {
-      const response = await fetch("https://ecom-2-dmmb.onrender.com/api/login", {
+      const response = await fetch("https://ecom-new-2-6hu0.onrender.com/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, pwd }),

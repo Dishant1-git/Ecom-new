@@ -8,7 +8,7 @@ const AllContacts = () => {
 
     const fetchContacts = async () => {
         try {
-            const res = await fetch('https://ecom-2-dmmb.onrender.com/api/contactall');
+            const res = await fetch('https://ecom-new-2-6hu0.onrender.com/api/contactall');
             const data = await res.json();
             if (data.success) {
                 setContacts(data.contacts);
@@ -25,7 +25,7 @@ const AllContacts = () => {
 
     const fetchOrders = async () => {
         try {
-            const res = await fetch('https://ecom-2-dmmb.onrender.com/api/allorders');
+            const res = await fetch('https://ecom-new-2-6hu0.onrender.com/api/allorders');
             const data = await res.json();
             if (data.success) {
                 setOrders(data.orders);

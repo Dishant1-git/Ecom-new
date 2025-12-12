@@ -27,7 +27,7 @@ const Addtocart = () => {
     const fetchCartData = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`https://ecom-2-dmmb.onrender.com/api/cartdata/${userid}`);
+            const response = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/cartdata/${userid}`);
             const result = await response.json();
 
             if (!response.ok) {
@@ -118,7 +118,7 @@ const Addtocart = () => {
         if (!confirmation.isConfirmed) return;
 
         try {
-            const response = await fetch(`http://localhost:9000/api/cartdelete/${cartItemId}`, {
+            const response = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/cartdelete/${cartItemId}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${sessionStorage.getItem('token')}`

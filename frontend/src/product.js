@@ -33,7 +33,7 @@ const[oldpic,setoldpic]=useState()
         formdata.append("pprice",pprice)
         formdata.append("pdescription",pdescription)
         try{
-            const res=await fetch("https://ecom-2-dmmb.onrender.com/api/product",{
+            const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/product",{
                 method:"post",
                 body:formdata
             })
@@ -52,7 +52,7 @@ const[oldpic,setoldpic]=useState()
     }
     const data=async()=>{
         try{
-            const res=await fetch("http://localhost:9000/api/category1",{
+            const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/category1",{
                 method:"get"
             })
             if(res.ok){
@@ -72,7 +72,7 @@ const[oldpic,setoldpic]=useState()
     }
     const data1=async()=>{
         try{
-            const res=await fetch("http://localhost:9000/api/product1",{
+            const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/product1",{
                 method:"get"
             })
             if(res.ok){
@@ -92,7 +92,7 @@ const[oldpic,setoldpic]=useState()
     }
     const datasub=async()=>{
         try{
-            const res=await fetch("http://localhost:9000/api/subcat",{
+            const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/subcat",{
                 method:"get"
             })
             if(res.ok){
@@ -124,7 +124,7 @@ const[oldpic,setoldpic]=useState()
         if (!result.isConfirmed) return;
     
         try {
-            const res = await fetch(`http://localhost:9000/api/pdelete/${pid}`, {
+            const res = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/pdelete/${pid}`, {
                 method: "delete"
             })
             if (res.ok) {
@@ -158,7 +158,7 @@ const[oldpic,setoldpic]=useState()
         formdata.append("oldpic",oldpic)
         formdata.append("productid",productid)
         try{
-            const res= await fetch("http://localhost:9000/api/productupdate",{
+            const res= await fetch("https://ecom-new-2-6hu0.onrender.com/api/productupdate",{
                 method:"put",
                 body:formdata
             })

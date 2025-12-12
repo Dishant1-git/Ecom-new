@@ -39,7 +39,7 @@ const[cname,setcname]=useState()
 
       const latestproduct = async () => {
     try {
-        const res = await fetch("https://ecom-2-dmmb.onrender.com/api/latestprod")
+        const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/latestprod")
         if (res.ok) {
            var result = await res.json()
             if (result.statuscode === 1) {
@@ -68,7 +68,7 @@ const[cname,setcname]=useState()
       const cat=async()=>{
       
         try{
-            const res= await fetch("https://ecom-2-dmmb.onrender.com/api/category1",{
+            const res= await fetch("https://ecom-new-2-6hu0.onrender.com/api/category1",{
                 method:"get"
             })
             if(res.ok){
@@ -90,7 +90,7 @@ const[cname,setcname]=useState()
 
     const data1=async()=>{
       try{
-          const res=await fetch("https://ecom-2-dmmb.onrender.com/api/product1",{
+          const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/product1",{
               method:"get"
           })
           if(res.ok){

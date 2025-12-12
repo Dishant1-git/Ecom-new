@@ -17,7 +17,7 @@ export const CartProvider = ({ children, userid, Loggedin }) => {
 
     const fetchCartData = async () => {
       try {
-        const response = await fetch(`https://ecom-2-dmmb.onrender.com/api/cartdata/${userid}`);
+        const response = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/cartdata/${userid}`);
         const result = await response.json();
 
         if (result.statuscode === 1) {

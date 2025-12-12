@@ -12,7 +12,7 @@ const ChatBot = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await fetch("https://ecom-2-dmmb.onrender.com/api/chat", {
+      const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput }),

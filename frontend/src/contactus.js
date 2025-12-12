@@ -17,7 +17,7 @@ const ContactUs = () => {
     const data = { name, email, mobile, subject, message };
 
     try {
-      const res = await fetch("https://ecom-2-dmmb.onrender.com/api/contact", {
+      const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/contact", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

@@ -26,7 +26,7 @@ const Productdetails = () => {
 
   const fetchProductDetails = async () => {
     try {
-      const res = await fetch(`http://localhost:9000/api/pdetails/${productId}`);
+      const res = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/pdetails/${productId}`);
       if (!res.ok) throw new Error("Failed to fetch product details");
 
       const result = await res.json();
@@ -50,7 +50,7 @@ const Productdetails = () => {
 
   const checkCartStatus = async () => {
     try {
-      const res = await fetch("https://ecom-2-dmmb.onrender.com/api/checkcart", {
+      const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/checkcart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

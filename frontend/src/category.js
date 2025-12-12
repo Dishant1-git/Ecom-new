@@ -17,7 +17,7 @@ const Category = () => {
         formdata.append("cname1", cname)
         formdata.append("ctype1", ctype)
         try {
-            const res = await fetch("https://ecom-2-dmmb.onrender.com/api/category", {
+            const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/category", {
                 method: "post",
                 body: formdata,
             })

@@ -12,7 +12,7 @@ const Showalldata = () => {
     const cat=async()=>{
       
         try{
-            const res= await fetch("https://ecom-2-dmmb.onrender.com/api/category1",{
+            const res= await fetch("https://ecom-new-2-6hu0.onrender.com/api/category1",{
                 method:"get"
             })
             if(res.ok){

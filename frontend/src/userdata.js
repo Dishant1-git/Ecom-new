@@ -15,7 +15,7 @@ export const Userdata = () => {
 
     const getuser = async () => {
 
-        const res = await fetch("https://ecom-2-dmmb.onrender.com/api/alluser", {
+        const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/alluser", {
 
             method: "GET"
 
@@ -40,7 +40,7 @@ export const Userdata = () => {
         const confirm=window.confirm("Do you treally want to delete user");
         if(confirm===true){
 
-        const res= await fetch(`https://ecom-2-dmmb.onrender.com/api/deleteuser/${id}`,{
+        const res= await fetch(`https://ecom-new-2-6hu0.onrender.com/api/deleteuser/${id}`,{
             method:"DELETE"
         });
         if(res.ok){
@@ -61,7 +61,7 @@ export const Userdata = () => {
    
     }
     const changeu = async (id, newType) => {
-        const res = await fetch(`https://ecom-2-dmmb.onrender.com/api/updateuser/${id}`, {
+        const res = await fetch(`https://ecom-new-2-6hu0.onrender.com/api/updateuser/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
