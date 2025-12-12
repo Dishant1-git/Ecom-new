@@ -10,10 +10,12 @@ const app = express()
 require('dotenv').config(); 
 const jwt = require('jsonwebtoken');
 app.use(express.json())
-app.use(cors({
-  origin:"https://ecom-new-rosy.vercel.app"
-}))
+const corsOptions = {
+  origin: "https://ecom-new-rosy.vercel.app",   // React frontend URL
+  credentials: true,                 // Allow cookies / tokens
+};
 
+app.use(cors(corsOptions));
 
 
 app.listen(9000, () => {
