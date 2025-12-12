@@ -55,7 +55,7 @@ const Register = () => {
 
         const data = { fname, lname, email, pwd }
         try {
-            const res = await fetch("https://ecom-2-dmmb.onrender.com/api/register", {
+            const res = await fetch("https://ecom-new-2-6hu0.onrender.com/api/register", {
                 method: "post",
                 body: JSON.stringify(data),
                 headers: {
