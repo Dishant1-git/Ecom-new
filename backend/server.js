@@ -20,7 +20,7 @@ app.listen(9000, () => {
 
 
 
-mongoose.connect(process.env.mongodb_url||"mongodb+srv://dishantkaushal456_db_user:wiIooIWpeMR5WKcB@cluster0.xnkyck2.mongodb.net/Bakery?retryWrites=true&w=majority")
+mongoose.connect(process.env.mongodb_url||"mongodb+srv://dishantkaushal456_db_user:0TAQFpQ9Mdbn4Aiw@cluster0.xnkyck2.mongodb.net/Bakery?retryWrites=true&w=majority")
     .then(() => console.log("database is connected"))
 
     .catch((err) => console.log("database is not connected"))
