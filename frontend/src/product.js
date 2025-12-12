@@ -20,7 +20,7 @@ const[oldpic,setoldpic]=useState()
 
     useEffect(()=>{
         data();
-        datasub();
+       
         data1()
     },[])
     const show=async()=>{
@@ -90,26 +90,7 @@ const[oldpic,setoldpic]=useState()
 
         }
     }
-    const datasub=async()=>{
-        try{
-            const res=await fetch("https://ecom-new-2-6hu0.onrender.com/api/subcat",{
-                method:"get"
-            })
-            if(res.ok){
-                const result=await res.json()
-                if(result){
-                    setsublist(result.dd)
-
-                }
-                else{
-                    Swal.fire('Error', "error", 'error')
-                }
-            }
-        }catch(err){
-            Swal.fire('Error', err, 'error')
-
-        }
-    }
+   
     const del = async (pid) => {
         const result = await Swal.fire({
             title: 'Are you sure?',

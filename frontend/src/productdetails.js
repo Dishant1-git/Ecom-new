@@ -154,7 +154,7 @@ const Productdetails = () => {
   //       apiResponse = await updateRes.json();
   //     }
        if (cartStatus===2 || cartStatus===1 ||cartStatus===3){
-        const addRes = await fetch("http://localhost:9000/api/addcart", {
+        const addRes = await fetch("https://ecom-new-2-6hu0.onrender.com/api/addcart", {
           method: "POST",
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(cartData),
