@@ -729,3 +729,15 @@ app.post("/api/chat", (req, res) => {
 
 
 // AIzaSyCQuQn_c_-gv4MqdAppy4PLkgbUlQCZ8-E
+
+
+
+////stripe payment
+app.post('/create-payment-intent', async (req, res) => {
+  const { amount } = req.body; // amount in cents
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount,
+    currency: 'usd',
+  });
+  res.json({ clientSecret: paymentIntent.client_secret });
+});
